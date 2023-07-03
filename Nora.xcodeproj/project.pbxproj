@@ -17,6 +17,7 @@
 		FAB88F022A52552E00569E1F /* NoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB88F012A52552E00569E1F /* NoraTests.swift */; };
 		FAB88F0C2A52552E00569E1F /* NoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB88F0B2A52552E00569E1F /* NoraUITests.swift */; };
 		FAB88F0E2A52552E00569E1F /* NoraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB88F0D2A52552E00569E1F /* NoraUITestsLaunchTests.swift */; };
+		FAB88F1C2A52555F00569E1F /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = FAB88F1B2A52555F00569E1F /* Appwrite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB88F1C2A52555F00569E1F /* Appwrite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = Nora;
+			packageProductDependencies = (
+				FAB88F1B2A52555F00569E1F /* Appwrite */,
+			);
 			productName = Nora;
 			productReference = FAB88EE42A52552B00569E1F /* Nora.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = FAB88EDB2A52552B00569E1F;
+			packageReferences = (
+				FAB88F1A2A52555F00569E1F /* XCRemoteSwiftPackageReference "sdk-for-apple" */,
+			);
 			productRefGroup = FAB88EE52A52552B00569E1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -449,6 +457,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +486,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -606,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAB88F1A2A52555F00569E1F /* XCRemoteSwiftPackageReference "sdk-for-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-apple";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAB88F1B2A52555F00569E1F /* Appwrite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAB88F1A2A52555F00569E1F /* XCRemoteSwiftPackageReference "sdk-for-apple" */;
+			productName = Appwrite;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FAB88EF02A52552B00569E1F /* Nora.xcdatamodeld */ = {
